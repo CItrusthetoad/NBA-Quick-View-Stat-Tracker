@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <title>NBA QuickView</title>
+</head>
+<body>
+    <header>
+        <h1>NBA QuickView</h1>
+        <h4>A Basic, Current-Season NBA Stat Tracker</h4>
+    </header>
+    <main>
+        <h1>Enter the name of any current NBA player</h1>
+        <form>
+            <input type="text" name="playerName" id="playerName" placeholder="Example: LeBron James" autocomplete="off">
+            <button type="button" onclick="checkInput(playerName.value)">Submit</button>
+        </form>
+    </main>
+
+    <section id="playerStats">
+        <h2 id="name">Name</h2>
+        <span class="information">
+            <h2 id="pts">PPG: null</h2>
+            <h2 id="reb">RPG: null</h2>
+            <h2 id="ast">APG: null</h2>
+        </span>
+    </section>
+
+    <footer>
+        <h2>Code on <a href="#">GitHub</a></h2>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
